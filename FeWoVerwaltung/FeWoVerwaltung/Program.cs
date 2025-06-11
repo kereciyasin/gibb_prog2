@@ -13,12 +13,12 @@ namespace FeWoVerwaltung
                 var fewoService = new FeWoService(context);
                 var buchungService = new BuchungService(context);
 
-                // Temiz başlangıç için tüm verileri kaldır
+
                 context.Buchungen.RemoveRange(context.Buchungen);
                 context.FeWos.RemoveRange(context.FeWos);
                 context.SaveChanges();
 
-                // 3 FeWo ekle
+
                 var fewos = new[]
                 {
                     new FeWo { Name = "FeWo1", Ort = "Ort1", PreisProWoche = 100 },
@@ -27,11 +27,10 @@ namespace FeWoVerwaltung
                 };
                 foreach (var f in fewos) fewoService.Erstellen(f);
 
-                // FeWos'u JSON ile yazdır
                 foreach (var f in fewoService.LesenAlle())
                     Console.WriteLine(f.ToJSON());
 
-                // 3 Buchung ekle
+
                 var buchungen = new[]
                 {
                     new Buchung { Name = "Buchung1", Kalenderwoche = 1, AnzahlPersonen = 1, FeWoId = fewos[0].Id },
@@ -40,12 +39,12 @@ namespace FeWoVerwaltung
                 };
                 foreach (var b in buchungen) buchungService.Erstellen(b);
 
-                // Buchungen'i JSON ile yazdır
+
                 foreach (var b in buchungService.LesenAlle()
                     .OrderBy(x => x.Id))
                     Console.WriteLine(b.ToJSON());
 
-                // Aynı FeWo ve Kalenderwoche'da yeni rezervasyon dene
+
                 var neueBuchung = new Buchung
                 {
                     Name = "Buchung4",
@@ -62,16 +61,15 @@ namespace FeWoVerwaltung
                 else
                     buchungService.Erstellen(neueBuchung);
 
-                // FeWo2 güncelle (ör: Ort değişsin)
+
                 var updateFeWo = fewoService.LesenEinzeln(fewos[0].Id);
                 updateFeWo.Ort = "Neuer Ort";
                 fewoService.Aktualisieren(updateFeWo);
 
-                // Tekrar FeWos'u yazdır
                 foreach (var f in fewoService.LesenAlle())
                     Console.WriteLine(f.ToJSON());
 
-                // Buchungen'i tekrar yazdır
+
                 foreach (var b in buchungService.LesenAlle()
                     .OrderBy(x => x.Id))
                     Console.WriteLine(b.ToJSON());
