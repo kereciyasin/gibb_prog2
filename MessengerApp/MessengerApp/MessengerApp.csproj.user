@@ -5,8 +5,5 @@
     <Compile Update="MessengerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="README.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
 </Project>
