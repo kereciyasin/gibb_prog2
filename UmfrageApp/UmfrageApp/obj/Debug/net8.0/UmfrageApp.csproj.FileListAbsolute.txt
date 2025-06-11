@@ -1,0 +1,15 @@
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\bin\Debug\net8.0\UmfrageApp.exe
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\bin\Debug\net8.0\UmfrageApp.deps.json
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\bin\Debug\net8.0\UmfrageApp.runtimeconfig.json
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\bin\Debug\net8.0\UmfrageApp.dll
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\bin\Debug\net8.0\UmfrageApp.pdb
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\UmfrageApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\UmfrageApp.AssemblyInfoInputs.cache
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\UmfrageApp.AssemblyInfo.cs
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\UmfrageApp.csproj.CoreCompileInputs.cache
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\UmfrageApp.sourcelink.json
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\UmfrageApp.dll
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\refint\UmfrageApp.dll
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\UmfrageApp.pdb
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\UmfrageApp.genruntimeconfig.cache
+C:\Users\kerec\source\repos\gibb_prog2\UmfrageApp\UmfrageApp\obj\Debug\net8.0\ref\UmfrageApp.dll
