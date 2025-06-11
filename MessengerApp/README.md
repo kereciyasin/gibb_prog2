@@ -21,7 +21,7 @@ Diese Anwendung simuliert einen Chat zwischen zwei separaten Fenstern (A und B).
 1. Öffne das Projekt mit Visual Studio.
 2. Baue und starte das Projekt (F5).
 3. Im Hauptfenster erscheinen folgende Buttons:
-![MessengerApp Chat Beispiel](screenshots/image2)
+![MessengerApp Chat Beispiel]((/screenshots/image2)
     - **Fenster A öffnen**
     - **Fenster B öffnen**
 ![MessengerApp Chat Beispiel](screenshots/image3)
