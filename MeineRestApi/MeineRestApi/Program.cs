@@ -1,4 +1,7 @@
 
+using MeineRestApi.Context;
+using Microsoft.EntityFrameworkCore;
+
 namespace MeineRestApi
 {
     public class Program
@@ -8,9 +11,13 @@ namespace MeineRestApi
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+            // EF Core DbContext ayarý - anahtar uyumlu
+            builder.Services.AddDbContext<BuchContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("BuchDatenbank")));
+
+            // Swagger/OpenAPI ayarlarý
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -24,13 +31,10 @@ namespace MeineRestApi
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
-
             app.Run();
         }
     }
 }
+
